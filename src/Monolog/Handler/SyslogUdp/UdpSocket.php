@@ -47,7 +47,7 @@ class UdpSocket
             return $this->socket;
         }
 
-        $domain = AF_INET;
+        $domain = AF_INET6;
         $protocol = SOL_UDP;
         // Check if we are using unix sockets.
         if ($this->port === 0) {
